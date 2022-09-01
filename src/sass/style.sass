@@ -1,7 +1,9 @@
 @import "vars"
+@import "fonts"
+
 
 body
-    font-family: sans-serif
+    font-family: 'Museo Sans Light'
 
 img
     max-width: 100%
@@ -17,6 +19,7 @@ img
     background-color: $button
     color: $accent
     border: none
+    +bold 
 
 .header
     padding: 20px 0px
@@ -46,6 +49,8 @@ img
         text-decoration: none
         display: block
         margin-top: 5px
+        +bold 
+
     &__button
         padding: 18px 47px
         border-radius: 10px
@@ -68,6 +73,7 @@ img
             color: $accent
             padding-right: 200px
             line-height: 55px
+            font-family: 'Museo Sans Bold'
             margin: 45px 0 20px 0
             @media (max-width: 1200px)
                 padding-right: 10px
